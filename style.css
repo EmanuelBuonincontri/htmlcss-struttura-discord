@@ -1,52 +1,106 @@
+/*inizio css generico*/
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: sans-serif;
 }
 .boxed {
-     max-width: 1000px;
-     margin: 0 auto;
-     
-}
-.bg-orange {
-    background-color: orange;
-    min-height: 50px; 
-}
-.dashed {
-    border: dashed 2px black;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .flex-container {
     display: flex;
 }
+.dashed {
+    border: dashed 2px black;
+}
+.bg-orange {
+    background-color: orange;
+    min-height: 50px;
+}
 .bg-grey {
-    background: lightgray;
+    background-color: lightgray;
+}
+.dashed-white {
+    border: dashed 2px white;
 }
 
+
+
+/*fine css generico*/
 header {
     background: lightblue;
-    padding-top: 1em;  
+    padding-top: 1em;
+    padding-bottom: 5px;
 }
-.header-colum-logo {
-    width: 20%;    
-}
-.header-colum-link {
-    width: 60%;
-}
-.header-colum-login {
+.header-column-logo {
     width: 20%;
+    
 }
-.header-colum-logo,
-.header-colum-link,
-.header-colum-login {
+.header-column-link {
+    width: 60%;
+    justify-content: center;
+}
+.header-column-login {
+    width: 20%;
+    justify-content: flex-end;
+}
+.header-column-logo,
+.header-column-link,
+.header-column-login {
     align-items: center;
 }
 .jumbotron {
-    background: blue;
-    justify-content: center;
+    background-color: blue;
     margin-top: 1em;
 }
 .jumbotron-content {
-    background: violet;
+    background-color: violet;
     width: 80%;
+}
+.jumbotron-container {
+    justify-content: center;
     min-height: 200px;
+    padding: 1em;
+}
+.section-row {
+    padding: 1em;
+    min-height: 250px;
+}
+.big-column {
+    background: lightskyblue;
+    width: 60%;
+}
+.small-column {
+    background: pink;
+    width: 40%;
+}
+.single-column {
+    background: green;
+    width: 100%;
+}
+footer { 
+    background: rgb(43, 42, 42);
+}
+.footer-row {
+    width: 1000px;
+    min-height: 200px;
+    justify-content: center;
+    
+}
+.bg-salmon {
+    background: salmon;
+}
+.bg-light-green {
+    background: rgb(105, 209, 105);
+}
+.column-1 {
+    width: 20%;
+}
+.column-2 {
+    width: 15%;
 }
