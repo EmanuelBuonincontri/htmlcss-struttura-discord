@@ -1,0 +1,52 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.boxed {
+     max-width: 1000px;
+     margin: 0 auto;
+     
+}
+.bg-orange {
+    background-color: orange;
+    min-height: 50px; 
+}
+.dashed {
+    border: dashed 2px black;
+}
+.flex-container {
+    display: flex;
+}
+.bg-grey {
+    background: lightgray;
+}
+
+header {
+    background: lightblue;
+    padding-top: 1em;  
+}
+.header-colum-logo {
+    width: 20%;    
+}
+.header-colum-link {
+    width: 60%;
+}
+.header-colum-login {
+    width: 20%;
+}
+.header-colum-logo,
+.header-colum-link,
+.header-colum-login {
+    align-items: center;
+}
+.jumbotron {
+    background: blue;
+    justify-content: center;
+    margin-top: 1em;
+}
+.jumbotron-content {
+    background: violet;
+    width: 80%;
+    min-height: 200px;
+}
